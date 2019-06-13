@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ThirdActivity">
+
+    <AbsoluteLayout
+        android:id="@+id/Qp"
+        android:layout_width="401dp"
+        android:layout_height="499dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Text">
+
+        <Button
+            android:id="@+id/Qz1"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="@drawable/dog" />
+
+        <Button
+            android:id="@+id/Qz2"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="@drawable/dog" />
+
+        <Button
+            android:id="@+id/Qz3"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="@drawable/spider" />
+
+        <Button
+            android:id="@+id/Qz4"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:background="@drawable/spider" />
+
+        <Button
+            android:id="@+id/Qz5"
+            android:layout_width="90dp"
+            android:layout_height="180dp"
+            android:background="@drawable/left1" />
+
+        <Button
+            android:id="@+id/Qz6"
+            android:layout_width="90dp"
+            android:layout_height="180dp"
+            android:background="@drawable/right1" />
+
+        <Button
+            android:id="@+id/Qz7"
+            android:layout_width="90dp"
+            android:layout_height="180dp"
+            android:background="@drawable/vertical1" />
+
+        <Button
+            android:id="@+id/Qz8"
+            android:layout_width="90dp"
+            android:layout_height="180dp"
+            android:background="@drawable/vertical2" />
+
+        <Button
+            android:id="@+id/Qz9"
+            android:layout_width="180dp"
+            android:layout_height="90dp"
+            android:background="@drawable/chasing" />
+
+        <Button
+            android:id="@+id/Qz10"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_x="0dp"
+            android:layout_y="0dp"
+            android:background="@drawable/mouse" />
+
+    </AbsoluteLayout>
+
+    <TextView
+        android:id="@+id/Text"
+        android:layout_width="fill_parent"
+        android:layout_height="37dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="135dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="时间:  "
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Textcount"
+        android:layout_width="135dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="步数："
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
