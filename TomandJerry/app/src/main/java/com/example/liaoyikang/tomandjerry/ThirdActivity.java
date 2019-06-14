@@ -2,6 +2,7 @@ package com.example.liaoyikang.tomandjerry;
 import android.app.Activity;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -25,6 +26,7 @@ public class ThirdActivity extends AppCompatActivity {
     float x1, x2, y1, y2;
     int Step=0;
     Timer T=new Timer();
+    Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +46,7 @@ public class ThirdActivity extends AppCompatActivity {
         size = findViewById(R.id.Text);
         txt1 = (TextView) findViewById(R.id.Textcount);
         time = findViewById(R.id.timer);
+
 
         //注册监听器
         for (int i = 0; i < 10; i++)
@@ -69,6 +72,7 @@ public class ThirdActivity extends AppCompatActivity {
                 count++;
             }
         }, 1000, 1000);
+        intent = new Intent(this, MainActivity.class);
 
     }
     public void tipClick() {
@@ -85,6 +89,7 @@ public class ThirdActivity extends AppCompatActivity {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 dialog.dismiss();
+                startActivity(intent);
             }
         });
         AlertDialog dialog = builder.create();
@@ -211,6 +216,8 @@ public class ThirdActivity extends AppCompatActivity {
                                 if(r+1==3 && c==1){
                                     txt1.setText("步数："+Step);
                                     tipClick();
+
+
                                 }
                             }
                             break;
